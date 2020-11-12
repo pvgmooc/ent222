@@ -1,0 +1,28 @@
+{
+  "short-name": "Internal Respiratory System",
+  "name": "[plguin name]",
+  "description": "[description of plugin]",
+  "maintainer": {
+    "name": "University of Alberta"
+  },
+  "configurationExamples": [
+    {
+      "configuration": {
+        "urlParams": {
+          "COURSE_HASHED_USER_ID": "%COURSE_HASHED_USER_ID%",
+          "COURSE_ID": "%COURSE_ID%"
+        },
+        "userName": "coursera-example"
+      }
+    }
+  ],
+  "version": "0.1",
+  "sandbox": "allow-scripts allow-same-origin allow-forms",
+  "actionTypes": [ "GET_SESSION_CONFIGURATION" ],
+  "macros": [],
+  "accessibility": {
+    "supportsTouch": false,
+    "minHeightPx": 0,
+    "minWidthPx": 0
+  }
+}

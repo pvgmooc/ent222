@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Custom Drag and Drop </title>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" src="https://www.coursera.org/widget/coursera-connect.css">
+    <script src="https://www.coursera.org/widget/coursera-widget-connect-v0.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+          <ul id="allLabels">
+<li class="label" drag-id="Fly" correct="false"> Fly </li>
+<li class="label" drag-id="Bumble" bee="" correct="false"> Bumble bee </li> <li class="label" drag-id="Honey" bee="" correct="false"> Honey bee </li> <li class="label" drag-id="Moth" correct="false"> Moth </li>
+<li class="label" drag-id="Butterfly" correct="false"> Butterfly </li>
+<li class="label" drag-id="Beetle" correct="false"> Beetle </li>
+</ul>
+
+
+            <div id="interface">
+                
+                <button id="reset"> Reset </button>
+                <button id="submit" style="background-color:#c6ebd9"> Submit </button>
+            </div>
+
+        </div>
+
+       <div id="allParts"> <ul>
+<li class="dropzone" id="blank1" drop-id="Fly" style="top: 277px; left: 73px;"></li>
+<li class="dropzone" id="blank2" drop-id="Bumble" bee="" style="top: 546px; left: 300px;"></li> 
+<li class="dropzone" id="blank3" drop-id="Honey" bee="" style="top: 547px; left: 557px;"></li> 
+<li class="dropzone" id="blank4" drop-id="Moth" style="top: 277px; left: 554px;"></li>
+<li class="dropzone" id="blank5" drop-id="Butterfly" style="top: 275px; left: 295px;"></li>
+<li class="dropzone" id="blank6" drop-id="Beetle" style="top: 546px; left: 70px;"></li>
+</ul>
+<img style="position:absolute" src="images/flowers.png"> </div>
+
+
+
+    </div>
+
+    <!--Feedback messages once "submit" is clicked-->
+    <div class="dialogCorrect" title="Correct" style="display: none">
+        <div style="margin-top: 10px"> Well done!</div>
+    </div>
+
+    <div class="dialogIncorrect" title="Incorrect" style="display: none">
+        <div style="margin-top: 10px"> Please check your answers again. </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿body {
+    touch-action: manipulation;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Arial';
+    font-size: 14px;
+    text-align: center;
+}
+
+
+button {
+    border-radius: 10px;
+    font-family: 'Franklin Gothic';
+    border: none;
+    padding: 8px;
+    margin: 3px;
+    width: 60px;
+    box-shadow: 0 2px 2px lightgrey;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 20;
+    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li {
+    display: block;
+    padding: 8px;
+}
+
+#allLabels {
+    float: left;
+    padding: 10px;
+    align-content: center;
+    min-width: 130px;
+    background-color: #ededed;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px lightgrey;
+}
+
+#interface {
+    width: 100%;
+    text-align:center;
+}
+
+#allParts {
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.dropzone {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    background-color: ''; 
+    height: 25px;
+    width: 85px;
+}
+
+.hover {
+    background-color: lightsteelblue;
+    filter: blur(8px);
+    opacity: 0.6;
+}
+
+
